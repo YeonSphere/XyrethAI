@@ -7,3 +7,23 @@ training:
   batch_size: 32
   epochs: 10
 
+data:
+  train_path: "data/train"
+  val_path: "data/validation"
+  test_path: "data/test"
+
+optimizer:
+  type: "adam"
+  learning_rate: 0.001
+
+callbacks:
+  early_stopping:
+    monitor: "val_loss"
+    patience: 3
+  model_checkpoint:
+    filepath: "models/best_model"
+    save_best_only: true
+
+hardware:
+  use_gpu: true
+  gpu_memory_fraction: 0.8
