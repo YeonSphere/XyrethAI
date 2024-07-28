@@ -1,17 +1,16 @@
-# 공명OS License
-#
-# Copyright(c) April 17, 2024, DaeBox Studio
+# AetherOS License
+# Copyright(c) July 23, 2024, DaeBox Studio
 # All rights reserved.
 #
 # This license governs the use, modification, and distribution of the
-# 공명OS Software.
+# AetherOS Software.
 #
 # 1. Definitions
 # =============
 #
 # - License refers to the terms and conditions for use, modification, and
 #   distribution as defined in this document.
-# - Software refers to the 공명OS Software.
+# - Software refers to the AetherOS Software.
 # - Organization refers to DaeBox Studio, the sole developer and maintainer
 #   of the Software.
 # - User refers to any individual or legal entity exercising rights
@@ -49,7 +48,7 @@
 # ---------------------------------------------
 # If you wish to make Contributions to the Software, you must first request
 # and receive explicit permission from the CEO. You may contact
-# the CEO at kukankitsune@naver.com to inquire about permission to make
+# the CEO at daedaevibin@naver.com to inquire about permission to make
 # Contributions.
 #
 # 4. Disclaimer of Warranty
@@ -78,36 +77,53 @@
 # ---------------
 # Users may request support from the Organization, and the Organization is not
 # obligated to respond to such requests to the extent possible unless specified
-# otherwise by the CEO.
+# otherwise by the CEO. Free tech support is available unless notified otherwise
+# directly from the CEO, Owner, or maintainers.
 #
-# 6. Termination
+# 6. Data Collection and AI Learning
+# ==================================
+#
+# 6.1 Data Collection
+# -------------------
+# The AI integrated into the Software will learn from the Users, meaning it will
+# collect data that mostly will not be seen by the developers or the Organization.
+# However, some data may be seen in logs for development purposes only.
+#
+# 6.2 User Consent
+# ----------------
+# If the User's data is required for any other purpose, they will be directly contacted
+# in the Discord server and will be asked to acquire legal permission for such use.
+# By using this Software, Users legally agree to the terms stated in this License.
+#
+# 7. Termination
 # ============
 #
-# 6.1 Termination of Rights
+# 7.1 Termination of Rights
 # ------------------------
 # Your rights under this License will terminate automatically if you
 # violate any of the terms of this License including those given by the CEO
 # directly based on your role in the organization.
 #
-# 7. Miscellaneous
+# 8. Miscellaneous
 # ===============
 #
-# 7.1 Contact Information
+# 8.1 Contact Information
 # ----------------------
 # Any specific question about this License, its terms, or special use cases
 # should be directed to the email listed on the Organization's page at
 # https://github.com/DaeBox-Studio/ for support. If required, you may contact
-# the CEO directly at kukankitsune@naver.com.
+# the CEO directly at daedaevibin@naver.com. Additionally, you can contact
+# DaeBox Studio at DaeBoxStudio@gmail.com.
 #
 # If you wish to develop any part of the software for your own platform
-# (Such as Android, IOS, MacOS, or Linux) you ABSOLUTELY MUST obtain permission from
+# (such as Android, iOS, macOS, or Linux) you ABSOLUTELY MUST obtain permission from
 # the CEO first.
 # This license and all software it covers under DaeBox Studio is
-# an original work of Jeremy Matlock, the current owmer/CEO of DaeBox Studio
-# and it's team of developers, designers and anyone else that is currently in the organization
+# an original work of Jeremy Matlock, the current owner/CEO of DaeBox Studio
+# and its team of developers, designers, and anyone else that is currently in the organization
 # and those that are added later.
 # This being the case, it is automatically under Copyright in the U.S.
 # due to certain protection laws.
 #
-# Dated: April 17, 2024
+# Dated: July 23, 2024
 # Owner: DaeBox Studio

@@ -1,8 +1,0 @@
-pygame
-speechrecognition
-pyttsx3
-tensorflow
-deepspeech
-mycroft
-unittest
-wave
