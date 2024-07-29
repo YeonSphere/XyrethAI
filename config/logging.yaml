@@ -1,22 +1,33 @@
 # logging.yaml
 version: 1
 formatters:
+  detailed:
+    format: '%(asctime)s %(name)s %(levelname)s: %(message)s'
   simple:
     format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 
 handlers:
   console:
     class: logging.StreamHandler
+    formatter: detailed
     formatter: simple
     level: DEBUG
   file:
     class: logging.FileHandler
+    filename: 'logs/app.log'
+    formatter: detailed
     formatter: simple
     level: DEBUG
     filename: logs/app.log
 
 loggers:
+  my_app:
+    level: DEBUG
   my_logger:
     handlers: [console, file]
     level: DEBUG
     propagate: no
+root:
+  level: DEBUG
+  handlers: [console, file]
+

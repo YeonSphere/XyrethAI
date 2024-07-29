@@ -1,8 +1,3 @@
-pygame
-speechrecognition
-pyttsx3
 tensorflow
-deepspeech
-mycroft
-unittest
-wave
+PyYAML
+openai-whisper @ git+https://github.com/openai/whisper.git

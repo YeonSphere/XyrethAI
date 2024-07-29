@@ -8,6 +8,9 @@ training:
   epochs: 10
 
 data:
+  train_path: 'path/to/train_data'
+  val_path: 'path/to/val_data'
+  audio_path: 'audio/'
   train_path: "data/train"
   val_path: "data/validation"
   test_path: "data/test"
@@ -16,6 +19,8 @@ optimizer:
   type: "adam"
   learning_rate: 0.001
 
+training:
+  epochs: 10
 callbacks:
   early_stopping:
     monitor: "val_loss"
@@ -27,3 +32,6 @@ callbacks:
 hardware:
   use_gpu: true
   gpu_memory_fraction: 0.8
+
+
+
