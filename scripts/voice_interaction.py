@@ -3,6 +3,10 @@ import os
 import yaml
 import logging
 import logging.config
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Load logging configuration
 with open('./config/logging.yaml', 'r') as file:
@@ -11,12 +15,32 @@ logging.config.dictConfig(logging_config)
 logger = logging.getLogger('my_app')
 
 try:
+    # Check required environment variables
+    if not os.getenv('REQUIRED_ENV_VAR'):
+        logger.error("Required environment variable 'REQUIRED_ENV_VAR' is not set.")
+        raise EnvironmentError("Required environment variable 'REQUIRED_ENV_VAR' is not set.")
+
     # Load configuration
-    with open('./config/config.yaml', 'r') as file:
-        config = yaml.safe_load(file)
+    try:
+        with open('./config/config.yaml', 'r') as file:
+            config = yaml.safe_load(file)
+    except FileNotFoundError:
+        logger.error("Configuration file not found.")
+        raise
 
     # Whisper integration for speech recognition
-    whisper_model = whisper.load_model("base")
+    try:
+        whisper_model = whisper.load_model("base")
+    except Exception as e:
+        logger.error(f"Failed to load Whisper model: {e}", exc_info=True)
+        raise
+
+    def collect_user_feedback(audio_file, transcription):
+        user_feedback = input(f"Is the transcription correct for {audio_file}? (yes/no): ")
+        if user_feedback.lower() == 'no':
+            correct_text = input("Please provide the correct transcription: ")
+            logger.info(f"Incorrect transcription: {transcription}, Correct transcription: {correct_text}")
+            update_model_with_feedback([(audio_file, correct_text)])
 
     # Process all audio files in the audio directory
     audio_path = config['data']['audio_path']
@@ -25,16 +49,7 @@ try:
             audio_file_path = os.path.join(audio_path, audio_file)
             result = whisper_model.transcribe(audio_file_path)
             logger.info(f"Transcription for {audio_file}: {result['text']}")
-
-            # Collect user feedback (simplified example)
-            user_feedback = input(f"Is the transcription correct for {audio_file}? (yes/no): ")
-            if user_feedback.lower() == 'no':
-                correct_text = input("Please provide the correct transcription: ")
-                # Log the incorrect transcription and the correct one
-                logger.info(f"Incorrect transcription: {result['text']}, Correct transcription: {correct_text}")
-
-                # Update model with feedback (simplified example)
-                update_model_with_feedback([(audio_file_path, correct_text)])
+            collect_user_feedback(audio_file, result['text'])
 
 except Exception as e:
     logger.error(f"An error occurred: {e}", exc_info=True)
