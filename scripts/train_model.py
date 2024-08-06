@@ -1,10 +1,13 @@
 import tensorflow as tf
-from tensorflow.keras.models import model_from_json
 import yaml
 import whisper
 import os
 import logging
 import logging.config
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Load logging configuration
 with open('./config/logging.yaml', 'r') as file:
@@ -21,18 +24,24 @@ try:
     with open('./models/model_architecture.json', 'r') as file:
         model_json = file.read()
 
-    model = model_from_json(model_json)
+    model = tf.keras.models.model_from_json(model_json)
+
+    # Set mixed precision policy
+    tf.keras.mixed_precision.set_global_policy('mixed_float16')
 
     # Compile model with mixed precision
     optimizer = tf.keras.optimizers.Adam(learning_rate=config['optimizer']['learning_rate'])
     model.compile(optimizer=optimizer, loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
     # Load data
-    train_data = tf.keras.preprocessing.image_dataset_from_directory(config['data']['train_path'])
-    val_data = tf.keras.preprocessing.image_dataset_from_directory(config['data']['val_path'])
+    train_data = tf.keras.preprocessing.image_dataset_from_directory(
+        './datasets/train'
+    )
+    val_data = tf.keras.preprocessing.image_dataset_from_directory(
+        './datasets/validation'
+    )
 
     # Train model with mixed precision
-    tf.keras.mixed_precision.set_global_policy('mixed_float16')
     model.fit(train_data, validation_data=val_data, epochs=config['training']['epochs'])
 
     # Save model
@@ -42,7 +51,7 @@ try:
     whisper_model = whisper.load_model("base")
 
     # Process all audio files in the audio directory
-    audio_path = config['data']['audio_path']
+    audio_path = './datasets/audio'
     for audio_file in os.listdir(audio_path):
         if audio_file.endswith('.wav'):
             audio_file_path = os.path.join(audio_path, audio_file)

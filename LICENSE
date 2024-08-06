@@ -1,129 +1,43 @@
-# AetherOS License
-# Copyright(c) July 23, 2024, DaeBox Studio
-# All rights reserved.
-#
-# This license governs the use, modification, and distribution of the
-# AetherOS Software.
-#
-# 1. Definitions
-# =============
-#
-# - License refers to the terms and conditions for use, modification, and
-#   distribution as defined in this document.
-# - Software refers to the AetherOS Software.
-# - Organization refers to DaeBox Studio, the sole developer and maintainer
-#   of the Software.
-# - User refers to any individual or legal entity exercising rights
-#   granted by this License.
-# - Contribution refers to any original work of authorship made by any
-#   individual that is not part of the Organization.
-# - CEO refers to the Chief Executive Officer of the Organization.
-# - Vice CEO refers to the Vice Chief Executive Officer of the Organization.
-#
-# 2. Rights
-# ========
-#
-# 2.1 Permission to Use
-# ----------------------
-# Users may use the Software for any lawful purpose, without
-# requirement of proprietary status, provided that access by the CEO is
-# freely allowed if required for any lawful or reasonable purpose.
-#
-# 2.2 Permission to Submit Contributions
-# -----------------------------------
-# Users may submit bug reports, fixes, or other Contributions to the
-# Software. However, such Contributions will be considered and
-# potentially incorporated into the Software by only the Organization's
-# team of Developers.
-#
-# 3. Conditions
-# =============
-#
-# 3.1 Restrictions on Distribution, Sale, or Derivative Works
-# ------------------------------------------------------
-# Users may not distribute, sell, or create derivative works of the Software
-# without explicit authorization from the CEO.
-#
-# 3.2 Obtaining Permission to Make Contributions
-# ---------------------------------------------
-# If you wish to make Contributions to the Software, you must first request
-# and receive explicit permission from the CEO. You may contact
-# the CEO at daedaevibin@naver.com to inquire about permission to make
-# Contributions.
-#
-# 4. Disclaimer of Warranty
-# ========================
-#
-# 4.1 Disclaimer of Warranties
-# --------------------------
-# The Software is provided "as is", without any warranty, express or
-# implied, including but not limited to warranties of merchantability, fitness
-# for a particular purpose, or non-infringement. The Organization does not
-# make any representation or warranty of any kind, express or implied, with
-# respect to the Software or the use thereof, including but not limited to
-# the warranties of title, non-infringement, merchantability, fitness for a
-# particular purpose, or warranties arising from course of dealing or usage
-# of trade. The entire risk arising out of the use or performance of the
-# Software remains with the User. The Organization does not assume any
-# liability for damages to the User or any other person or entity that may
-# result from the use of the Software, or from the inability to use the
-# Software. The provision of this License does not create any liability on
-# the part of the Organization.
-#
-# 5. Support
-# =========
-#
-# 5.1 User Support
-# ---------------
-# Users may request support from the Organization, and the Organization is not
-# obligated to respond to such requests to the extent possible unless specified
-# otherwise by the CEO. Free tech support is available unless notified otherwise
-# directly from the CEO, Owner, or maintainers.
-#
-# 6. Data Collection and AI Learning
-# ==================================
-#
-# 6.1 Data Collection
-# -------------------
-# The AI integrated into the Software will learn from the Users, meaning it will
-# collect data that mostly will not be seen by the developers or the Organization.
-# However, some data may be seen in logs for development purposes only.
-#
-# 6.2 User Consent
-# ----------------
-# If the User's data is required for any other purpose, they will be directly contacted
-# in the Discord server and will be asked to acquire legal permission for such use.
-# By using this Software, Users legally agree to the terms stated in this License.
-#
-# 7. Termination
-# ============
-#
-# 7.1 Termination of Rights
-# ------------------------
-# Your rights under this License will terminate automatically if you
-# violate any of the terms of this License including those given by the CEO
-# directly based on your role in the organization.
-#
-# 8. Miscellaneous
-# ===============
-#
-# 8.1 Contact Information
-# ----------------------
-# Any specific question about this License, its terms, or special use cases
-# should be directed to the email listed on the Organization's page at
-# https://github.com/DaeBox-Studio/ for support. If required, you may contact
-# the CEO directly at daedaevibin@naver.com. Additionally, you can contact
-# DaeBox Studio at DaeBoxStudio@gmail.com.
-#
-# If you wish to develop any part of the software for your own platform
-# (such as Android, iOS, macOS, or Linux) you ABSOLUTELY MUST obtain permission from
-# the CEO first.
-# This license and all software it covers under DaeBox Studio is
-# an original work of Jeremy Matlock, the current owner/CEO of DaeBox Studio
-# and its team of developers, designers, and anyone else that is currently in the organization
-# and those that are added later.
-# This being the case, it is automatically under Copyright in the U.S.
-# due to certain protection laws.
-#
-# Dated: July 23, 2024
-# Owner: DaeBox Studio
+# AetherOS, Nexus Browser, and Seokhwa AI License**Copyright (c) 2023, YeonSphere. All rights reserved.**
+
+This license governs the use, modification, and distribution of AetherOS Software, Nexus Browser, and Seokhwa AI (collectively referred to as "the Software").
+
+**1. Definitions**
+
+*   **Software:** Refers to AetherOS, Nexus Browser, and Seokhwa AI.
+*   **Organization:** Refers to YeonSphere, the developer and maintainer of the Software.
+*   **User:** Refers to any individual or entity using the Software.
+*   **Contribution:** Refers to any original work authored by individuals outside the Organization.
+
+**2. Rights**
+
+*   **Use:** Users may use the Software for any purpose, personal or commercial, provided they grant the Organization access for legitimate purposes upon request as well as stating original ownership of the organization.
+*   **Contributions:** Users may submit bug reports, fixes, or other contributions. The Organization willreview and may incorporate these contributions.
+
+**3. Conditions**
+
+*   **Distribution and Modification:** Users may not distribute, sell, or create derivative works of the Software without explicit permission from the Organization.
+*   **Contributing:** Users must obtain permission from the Organization before making contributions. Contact YeonSphere at daedaevibin@naver.com for inquiries.
+
+**4. Disclaimer of Warranty**
+
+The Software is provided "as is," without warranty of any kind, express or implied, including but not limited to merchantability, fitness for a particular purpose, or non-infringement. The Organization disclaims all liability for damages arising from the use or inability to use the Software.
+
+**5. Support**
+
+The Organization may provide support to users at its discretion.
+
+**6. Data Collection**
+
+The AI components of the Software may collect user data for learning and improvement. Users will be contacted for consent if their data is required for any other purpose.
+
+**7. Termination**
+
+This License terminates automatically if any of its terms are violated.
+
+**8. Miscellaneous**
+
+*   For questions or special use cases, contact YeonSphere's CEO at daedaevibin@naver.com.
+*   Permission is required to developany part of the Software for other platforms (Android, iOS, macOS, Linux, etc.).
+
+**Dated: July 28, 2023**
