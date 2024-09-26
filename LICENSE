@@ -1,43 +1,31 @@
-# AetherOS, Nexus Browser, and Seokhwa AI License**Copyright (c) 2023, YeonSphere. All rights reserved.**
+YeonSphere Universal Open Source License (YUOSL)
 
-This license governs the use, modification, and distribution of AetherOS Software, Nexus Browser, and Seokhwa AI (collectively referred to as "the Software").
+Copyright (c) 2024 Dae Sanghwi (@daedaevibin) and YeonSphere
 
-**1. Definitions**
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:
 
-*   **Software:** Refers to AetherOS, Nexus Browser, and Seokhwa AI.
-*   **Organization:** Refers to YeonSphere, the developer and maintainer of the Software.
-*   **User:** Refers to any individual or entity using the Software.
-*   **Contribution:** Refers to any original work authored by individuals outside the Organization.
+1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-**2. Rights**
+2. Any redistribution, commercial use, or derivative works based on this Software require explicit permission from @daedaevibin on GitHub.
 
-*   **Use:** Users may use the Software for any purpose, personal or commercial, provided they grant the Organization access for legitimate purposes upon request as well as stating original ownership of the organization.
-*   **Contributions:** Users may submit bug reports, fixes, or other contributions. The Organization willreview and may incorporate these contributions.
+3. Modifications to the Software must be clearly marked as such and must not be misrepresented as the original software.
 
-**3. Conditions**
+4. Users acknowledge that this Software is in active development. Users accept all risks associated with the use of the Software.
 
-*   **Distribution and Modification:** Users may not distribute, sell, or create derivative works of the Software without explicit permission from the Organization.
-*   **Contributing:** Users must obtain permission from the Organization before making contributions. Contact YeonSphere at daedaevibin@naver.com for inquiries.
+5. This Software and its users are protected by all applicable laws regarding the right to employ privacy-enhancing technologies, content filtering, and similar tools. No entity can hold the Software, its creators, or its users liable for any conflicts arising from the use of such features.
 
-**4. Disclaimer of Warranty**
+6. This Software is not intended for use by any entities that engage in practices restricting user freedoms related to privacy, content filtering, or similar technologies. Use of this Software cannot be considered a violation of any terms of service or be subject to claims of circumvention of technological measures.
 
-The Software is provided "as is," without warranty of any kind, express or implied, including but not limited to merchantability, fitness for a particular purpose, or non-infringement. The Organization disclaims all liability for damages arising from the use or inability to use the Software.
+7. The rights granted herein are universally applicable and cannot be invalidated by any policies that may restrict user freedoms related to privacy, content filtering, or similar services. Users are responsible for ensuring their use of this Software complies with their local laws and regulations.
 
-**5. Support**
+8. This license explicitly preserves and protects the right of users to employ privacy-enhancing technologies, content filtering, and similar tools, as protected under applicable laws.
 
-The Organization may provide support to users at its discretion.
+9. No part of this Software or its use shall be construed as a violation of any company's terms of service, policies, or technological measures. Users of this Software are indemnified against any such claims.
 
-**6. Data Collection**
+10. This Software and its users are protected against any legal action, charges, or claims of rule violation from any company or entity related to the use of privacy-enhancing technologies, content filtering, or similar tools implemented in or used alongside this Software.
 
-The AI components of the Software may collect user data for learning and improvement. Users will be contacted for consent if their data is required for any other purpose.
+11. The authors reserve the right to change the terms of this license in future versions of the Software.
 
-**7. Termination**
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS, COPYRIGHT HOLDERS, OR USERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This License terminates automatically if any of its terms are violated.
-
-**8. Miscellaneous**
-
-*   For questions or special use cases, contact YeonSphere's CEO at daedaevibin@naver.com.
-*   Permission is required to developany part of the Software for other platforms (Android, iOS, macOS, Linux, etc.).
-
-**Dated: July 28, 2023**
+By using this Software, you agree to all the terms and conditions of this license.
