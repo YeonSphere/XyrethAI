@@ -1,35 +1,55 @@
 # config.yaml
 model:
-  name: "Seokhwa"
-  version: "1.0"
+  name: "Seokjin"
+  version: "1.1"
 
 training:
-  batch_size: 32
-  epochs: 10
+  batch_size: 64
+  epochs: 20
+  validation_split: 0.2
 
 data:
-  
   train_path: "data/train"
   val_path: "data/val"
+  test_path: "data/test"
   audio_path: 'audio/'
 
 optimizer:
   type: "adam"
-  learning_rate: 0.001
+  learning_rate: 0.0005
+  beta_1: 0.9
+  beta_2: 0.999
 
-training:
-  epochs: 10
 callbacks:
   early_stopping:
     monitor: "val_loss"
-    patience: 3
+    patience: 5
+    min_delta: 0.001
   model_checkpoint:
     filepath: "models/best_model"
     save_best_only: true
+    save_weights_only: false
 
 hardware:
   use_gpu: true
-  gpu_memory_fraction: 0.8
+  gpu_memory_fraction: 0.9
+  mixed_precision: true
 
+seokjin:
+  wake_word: "Hey Seokjin"
+  language: "en"
+  voice:
+    gender: "male"
+    pitch: 1.0
+    speed: 1.0
+  nlp:
+    max_sequence_length: 512
+    embedding_dim: 256
 
+logging:
+  level: "INFO"
+  save_path: "logs/"
 
+security:
+  encryption_enabled: true
+  api_rate_limit: 100

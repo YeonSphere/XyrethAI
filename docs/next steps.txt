@@ -1,7 +1,0 @@
-
-### Next Steps
-1. **Create the Visual Assets**: Design or source the image for Seokhwa and save it as `character.png` in the `virtual_character/assets/` directory.
-2. **Implement the Character Control**: Use the `character_control.py` script to manage Seokhwa's movements.
-3. **Develop UI Interactions**: Use the `ui_interaction.py` script to handle chat bubbles and voice responses.
-4. **Test the Character**: Run the `test_character.py` script to ensure the character's movement functionality works correctly.
-5. **Optimize and Test**: Continuously optimize your AI for performance and test it thoroughly.

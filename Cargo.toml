@@ -1,0 +1,25 @@
+[package]
+name = "seokjin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+flutter_rust_bridge = "1.82.4"
+ocl = "0.19.6"
+reqwest = { version = "0.11.23", features = ["blocking"] }
+scraper = "0.18.1"
+url = "2.5.0"
+rayon = "1.8.0"
+serde = { version = "1.0.193", features = ["derive"] }
+serde_json = "1.0.108"
+log = "0.4.20"
+chrono = "0.4.31"
+whatlang = "0.16.3"
+tokio = { version = "1.35.1", features = ["full"] }
+async-trait = "0.1.75"
+futures = "0.3.30"
+anyhow = "1.0.77"
+thiserror = "1.0.52"
+rand = "0.8.5"
+cpal = "0.15.2"
+hound = "3.5.1"

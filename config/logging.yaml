@@ -2,31 +2,27 @@
 version: 1
 formatters:
   detailed:
-    format: '%(asctime)s %(name)s %(levelname)s: %(message)s'
-  simple:
     format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  simple:
+    format: '%(asctime)s - %(levelname)s - %(message)s'
 
 handlers:
   console:
     class: logging.StreamHandler
-    formatter: detailed
-    level: DEBUG
+    formatter: simple
+    level: INFO
   file:
     class: logging.FileHandler
-    filename: './logs/app.log'
+    filename: './logs/seokjin.log'
     formatter: detailed
     level: DEBUG
 
 loggers:
-  my_app:
+  seokjin:
     handlers: [console, file]
-    level: DEBUG
-    propagate: no
-  my_logger:
-    handlers: [console, file]
-    level: DEBUG
+    level: INFO
     propagate: no
 
 root:
-  level: DEBUG
+  level: INFO
   handlers: [console, file]
