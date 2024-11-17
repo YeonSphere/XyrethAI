@@ -1,5 +1,11 @@
 # Seokjin AI Project
 
+[![CI](https://github.com/YeonSphere/Seokjin-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/YeonSphere/Seokjin-AI/actions/workflows/ci.yml)
+[![Rust](https://img.shields.io/badge/Rust-1.75.0-orange.svg)](https://www.rust-lang.org)
+[![Flutter](https://img.shields.io/badge/Flutter-3.19.0-blue.svg)](https://flutter.dev)
+[![License](https://img.shields.io/badge/License-YUOSL-purple)](LICENSE)
+[![codecov](https://codecov.io/gh/YeonSphere/Seokjin-AI/branch/main/graph/badge.svg)](https://codecov.io/gh/YeonSphere/Seokjin-AI)
+
 ## Overview
 This project aims to create a fully interactive AI named Seokjin that can interact with both the OS and browser, featuring a small male character for UI navigation. Seokjin AI is built using Rust for backend processing and Flutter for the frontend user interface.
 
