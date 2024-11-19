@@ -38,10 +38,15 @@ This project aims to create a fully interactive AI named Seokjin that can intera
 - Follow the coding standards outlined in CONTRIBUTING.md
 
 ## License
-This project is licensed under the YeonSphere Universal Open Source License (YUOSL). See the LICENSE file for details.
-
-## Contributing
-We welcome contributions! Please see our CONTRIBUTING.md file for guidelines on how to submit pull requests, report issues, and suggest improvements.
+This project is licensed under the YeonSphere Universal Open Source License (YUOSL). Key points:
+- 10% revenue share, paid quarterly
+- 30-day response window for inquiries
+- Contact @daedaevibin for commercial licensing
+- See the [LICENSE](LICENSE) file for full details
 
 ## Contact
-For any queries or support, please open an issue on the GitHub repository or contact the maintainers directly.
+
+- Primary Contact: Jeremy Matlock (@daedaevibin)
+- Email: daedaevibin@naver.com
+
+For technical support or feature requests, please open an issue on the GitHub repository.
