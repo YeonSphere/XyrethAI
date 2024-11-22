@@ -6,38 +6,43 @@
 [![License](https://img.shields.io/badge/License-YUOSL-purple)](LICENSE)
 [![codecov](https://codecov.io/gh/YeonSphere/Seokjin-AI/branch/main/graph/badge.svg)](https://codecov.io/gh/YeonSphere/Seokjin-AI)
 
+## Documentation
+
+ **All documentation has been moved to our website!**
+
+Visit [yeonsphere.github.io/seokjin-ai](https://yeonsphere.github.io/seokjin-ai.html) for:
+- Installation Guide
+- API Reference
+- Integration Guide
+- Model Documentation
+- Contributing Guidelines
+
 ## Overview
-This project aims to create a fully interactive AI named Seokjin that can interact with both the OS and browser, featuring a small male character for UI navigation. Seokjin AI is built using Rust for backend processing and Flutter for the frontend user interface.
 
-## Features
-- Natural language processing and generation
-- OS and browser interaction capabilities
-- Customizable virtual character for UI navigation
-- Multi-language support
-- Voice recognition and synthesis (in development)
+Seokjin AI is an interactive AI assistant that can interact with both the OS and browser, featuring a small male character for UI navigation. Built using Rust for backend processing and Flutter for the frontend user interface.
 
-## Directory Structure
-- `src/`: Source code for the Rust backend
-- `lib/`: Flutter application source code
-- `assets/`: Images, fonts, and other static assets
-- `native/`: Native code and bridges between Rust and Flutter
-- `test/`: Unit and integration tests
+## Quick Start
 
-## Setup
-1. Install Rust (https://www.rust-lang.org/tools/install)
-2. Install Flutter (https://flutter.dev/docs/get-started/install)
-3. Clone the repository: `git clone https://github.com/yourusername/Seokjin-AI.git`
-4. Navigate to the project directory: `cd Seokjin-AI`
-5. Install Rust dependencies: `cargo build`
-6. Install Flutter dependencies: `flutter pub get`
-7. Run the application: `flutter run`
+```bash
+# Install Seoggi (required)
+curl -fsSL https://raw.githubusercontent.com/YeonSphere/Seoggi/main/bootstrap/install.sh | sh
 
-## Development
-- Use `cargo test` to run Rust tests
-- Use `flutter test` to run Flutter tests
-- Follow the coding standards outlined in CONTRIBUTING.md
+# Install Seokjin AI
+seoc install seokjin-ai
+
+# Run the UI
+seokjin-ui
+```
+
+## Quick Links
+
+- [Website & Documentation](https://yeonsphere.github.io/seokjin-ai.html)
+- [Discord Community](https://discord.gg/yeonsphere)
+- [Issue Tracker](https://github.com/YeonSphere/Seokjin-AI/issues)
+- [License](LICENSE)
 
 ## License
+
 This project is licensed under the YeonSphere Universal Open Source License (YUOSL). Key points:
 - 10% revenue share, paid quarterly
 - 30-day response window for inquiries
@@ -47,6 +52,5 @@ This project is licensed under the YeonSphere Universal Open Source License (YUO
 ## Contact
 
 - Primary Contact: Jeremy Matlock (@daedaevibin)
+- Discord: [Join our community](https://discord.gg/yeonsphere)
 - Email: daedaevibin@naver.com
-
-For technical support or feature requests, please open an issue on the GitHub repository.
