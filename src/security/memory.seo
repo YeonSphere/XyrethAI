@@ -1,0 +1,28 @@
+type MemoryProtection {
+    guard: MemoryGuard
+    allocator: SecureAllocator
+    regions: Vector<ProtectedRegion>
+    validator: AccessValidator
+}
+
+type ProtectedRegion {
+    start: *void
+    size: usize
+    permissions: Permissions
+    owner: ProcessId
+    flags: ProtectionFlags
+}
+
+fn protect_memory_region(protection: &MemoryProtection, region: &Region) -> Result<void> {
+    // Strict memory protection implementation
+    let protected = protection.guard.create_protected_region(
+        region.start,
+        region.size,
+        region.permissions
+    )?
+
+    protection.regions.push(protected)
+    protection.validator.register_region(protected)
+    
+    Ok(())
+}

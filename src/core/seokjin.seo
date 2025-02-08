@@ -1,0 +1,24 @@
+type Seokjin {
+    logic: LogicSystem
+    security: SecuritySystem
+    flags: FlagSystem
+    resources: ResourceManager
+    state: AIState
+}
+
+type AIState {
+    initialized: bool
+    current_security_level: SecurityLevel
+    active_flags: Vector<Flag>
+    memory_usage: ResourceStats
+}
+
+fn create_seokjin() -> Result<Seokjin> {
+    Seokjin {
+        logic: LogicSystem::new()?,
+        security: SecuritySystem::new(DEFAULT_SECURITY_CONFIG)?,
+        flags: FlagSystem::new(),
+        resources: ResourceManager::new(RESOURCE_LIMITS)?,
+        state: AIState::default()
+    }
+}

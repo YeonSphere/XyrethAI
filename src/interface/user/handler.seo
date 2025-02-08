@@ -1,0 +1,12 @@
+type UserInteractionHandler {
+    input_processor: InputProcessor
+    response_generator: ResponseGenerator
+    context_manager: ContextManager
+    feedback_collector: FeedbackCollector
+}
+
+fn handle_user_interaction(handler: &UserInteractionHandler, input: UserInput) -> Result<Response> {
+    let context = handler.context_manager.get_current()?
+    let processed = handler.input_processor.process(input, context)?
+    handler.response_generator.generate(processed, context)
+}

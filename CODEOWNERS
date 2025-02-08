@@ -1,40 +1,41 @@
-# Nexus Browser Codeowners
+#  Codeowners
 
-# Global owners (These users will be the default owners for everything in the repo)
-* @daedaevibin @YeonSphere
-
-# Specific file owners
-/LICENSE
-/README.md
-/CONTRIBUTING.md
-/CHANGELOG.md
-
-# Frontend directory
-/frontend/
-
-# Backend directory (if applicable)
-/backend/
-
-# Configuration files
-*.toml
-*.yaml
-*.json
-.env
-.gitignore
-
-# Tests directory
-/tests/
-
-# Documentation
-/docs/
-
-# Build and configuration files
-*.toml
-*.yaml
-*.json
-
-# Third-party dependencies
-/vendor/
+# Global owner
+* @daedaevibin
 
 # CI/CD
 /.github/
+
+# Core Systems
+/Seoggi/src/core/ @dae
+/Seokjin-AI/src/core/ @dae
+
+# Browser Implementation
+/Nexus/src/ @dae
+
+# Build Systems
+/*/build/ @dae
+
+# Core AI
+/src/core/
+/src/logic/
+/src/patterns/
+
+# Security
+/src/security/
+/src/system/
+
+# Analysis
+/src/analysis/
+
+# Documentation
+/docs/architecture/* @dae
+/docs/security/* @dae
+/*.md @dae
+/docs/ @dae
+
+# Tests & Validation
+/tests/ @dae
+/tests/security/* @dae
+/tests/performance/* @dae
+/tests/integration/* @dae

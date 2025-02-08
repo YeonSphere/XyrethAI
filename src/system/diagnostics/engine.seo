@@ -1,0 +1,13 @@
+type DiagnosticsEngine {
+    analyzers: Vector<Analyzer>
+    collectors: Vector<DataCollector>
+    reporters: Vector<Reporter>
+    history: DiagnosticsHistory
+}
+
+fn run_diagnostics(engine: &DiagnosticsEngine) -> Result<DiagnosticsReport> {
+    let data = engine.collectors.collect_all()?
+    let analysis = engine.analyzers.analyze_all(data)?
+    engine.history.store(analysis.clone())
+    engine.reporters.generate_report(analysis)
+}

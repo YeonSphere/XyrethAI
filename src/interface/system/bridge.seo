@@ -1,0 +1,11 @@
+type SystemBridge {
+    command_processor: CommandProcessor
+    event_handler: EventHandler
+    state_sync: StateSync
+    security_validator: SecurityValidator
+}
+
+fn process_system_command(bridge: &SystemBridge, command: SystemCommand) -> Result<CommandResult> {
+    bridge.security_validator.validate_command(command)?
+    bridge.command_processor.execute(command)
+}

@@ -1,0 +1,12 @@
+type MaintenanceScheduler {
+    tasks: Vector<MaintenanceTask>
+    scheduler: TimeBasedScheduler
+    priority_manager: PriorityManager
+    impact_analyzer: ImpactAnalyzer
+}
+
+fn schedule_maintenance(scheduler: &MaintenanceScheduler) -> Result<MaintenanceSchedule> {
+    scheduler.impact_analyzer.evaluate_tasks(scheduler.tasks)?
+        .sort_by_priority()
+        .schedule_optimal_times()
+}

@@ -1,0 +1,27 @@
+type CryptoSystem {
+    key_manager: KeyManager
+    cipher: SymmetricCipher
+    hasher: SecureHasher
+    verifier: SignatureVerifier
+}
+
+type SecureMessage {
+    content: Vector<u8>
+    signature: Signature
+    timestamp: u64
+    metadata: MessageMetadata
+}
+
+fn encrypt_communication(crypto: &CryptoSystem, message: &Message) -> Result<SecureMessage> {
+    // Strong encryption for AI communications
+    let key = crypto.key_manager.get_active_key()?
+    let encrypted = crypto.cipher.encrypt(message.content, key)?
+    let signature = crypto.hasher.sign(encrypted)?
+    
+    Ok(SecureMessage {
+        content: encrypted,
+        signature: signature,
+        timestamp: now(),
+        metadata: message.metadata
+    })
+}
