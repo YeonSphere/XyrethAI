@@ -1,15 +1,34 @@
+/**
+ * SecurityMonitor
+ *
+ * Manages security monitoring and event handling.
+ */
 type SecurityMonitor {
     flag_system: FlagSystem
     isolation: ProcessIsolation
     guard: SecurityGuard
 }
 
+/**
+ * FlagSystem
+ *
+ * Manages flag levels, handlers, and history for security events.
+ */
 type FlagSystem {
     current_level: FlagLevel
     handlers: HashMap<FlagLevel, FlagHandler>
     history: Vector<FlagEvent>
 }
 
+/**
+ * handle_security_event
+ *
+ * Handles security events by analyzing their severity and taking appropriate actions.
+ *
+ * @param monitor The security monitor managing the event handling.
+ * @param event The security event to handle.
+ * @return Result<Action> The action taken in response to the event.
+ */
 fn handle_security_event(monitor: &SecurityMonitor, event: SecurityEvent) -> Result<Action> {
     let severity = analyze_severity(event)
     let flag = FlagLevel::from_severity(severity)
@@ -23,6 +42,11 @@ fn handle_security_event(monitor: &SecurityMonitor, event: SecurityEvent) -> Res
     }
 }
 
+/**
+ * SecuritySystem
+ *
+ * Manages security components including process isolation, memory guarding, input validation, and cryptographic management.
+ */
 type SecuritySystem {
     isolation: ProcessIsolation
     memory_guard: MemoryGuard
@@ -30,6 +54,11 @@ type SecuritySystem {
     crypto: CryptoManager
 }
 
+/**
+ * SecurityLevel
+ *
+ * Represents different security levels.
+ */
 type SecurityLevel {
     NORMAL
     ELEVATED
@@ -37,12 +66,21 @@ type SecurityLevel {
     CRITICAL
 }
 
+/**
+ * validate_operation
+ *
+ * Validates an operation for security compliance.
+ *
+ * @param system The security system managing the validation.
+ * @param op The operation to validate.
+ * @return SecurityResult The result of the validation.
+ */
 fn validate_operation(system: &SecuritySystem, op: Operation) -> SecurityResult {
     // Strict security validation
     if !system.validator.is_safe(op) {
         return SecurityResult::Denied(
             FlagLevel::RED,
-            "Operation failed security validation"
+            "Operation failed security validation: " + op.description()
         )
     }
 
@@ -50,7 +88,7 @@ fn validate_operation(system: &SecuritySystem, op: Operation) -> SecurityResult 
         true => system.memory_guard.protect_operation(op),
         false => SecurityResult::Denied(
             FlagLevel::ORANGE,
-            "Operation violated process isolation"
+            "Operation violated process isolation: " + op.description()
         )
     }
 }
